@@ -12,7 +12,7 @@
     <style>
         @media (max-width: 1200px) {
             .modal-dialog.modal-xl {
-                width: 95%;
+                width: 100%;
                 margin: 20px auto;
             }
         }
@@ -41,6 +41,11 @@
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
         }
 
+        .navbar-brand img {
+            width: 60px;
+            height: auto;
+        }
+
         .hero-section {
             background: linear-gradient(rgba(44, 62, 80, 0.52), rgba(52, 152, 219, 0.52)),
                 url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.1&auto=format&fit=crop&w=1950&q=80');
@@ -50,6 +55,12 @@
             display: flex;
             align-items: center;
             color: white;
+        }
+
+        .hero-logo {
+            width: 420px; 
+            height: auto; 
+            margin-top: -10px;
         }
 
         .btn-custom {
@@ -91,7 +102,8 @@
         .display-4 {
             color: #ffffff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            font-weight: 600;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .modal-header {
@@ -168,7 +180,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Library System</a>
+            <a class="navbar-brand" href="https://web.facebook.com/aujoserizal">
+                <img src="aau.png" alt="logo">Library Management System</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -291,8 +304,9 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container text-center">
-            <h1 class="display-4 mb-4">Welcome to Our Library</h1>
-            <p class="lead mb-5">Discover millions of books and resources at your fingertips</p>
+            <img src="aau.png" alt="logo" class="hero-logo">
+            <h1 class="display-4 mb-4">Arellano University Jose Rizal Campus SHS Library Management System</h1>
+            <p class="lead mb-5">Discover Thousands books and resources at your fingertips</p>
         </div>
     </section>
 
